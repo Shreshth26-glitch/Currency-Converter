@@ -1,43 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="currency.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="container">
-        <h2>Currency Converter</h2>
-        <form>
-            <div class="amount">
-                <p>enter amount</p>
-                <input value="1" type="text" />
-            </div>
-            <div class="dropdown">
-                <div class="form">
-                    <p>from</p>
-                    <div class="select-container">
-                      <img src="https://flagsapi.com/US/flat/64.png">
-                      <select name="from"></select>
-                    </div>
-                </div>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                <div class="to">
-                    <p>To</p>
-                    <div class="select-container">
-                      <img src="https://flagsapi.com/IN/flat/64.png">
-                      <select name="to"></select>
-                    </div>
-                </div>
-            </div>
-            <div class="msg">1USD = 100INR</div>
-            <button>get exchange rates</button>
-        </form>
-    </div>
-    <script src="countrylist.js"></script>
-    <script src="currency.js"></script>
-</body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Currency Converter</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<header class="navbar">
+<h2>💱 Global Converter</h2>
+</header>
+
+
+<!-- HERO / CONVERTER SECTION -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Currency Converter</h1>
+<p>Convert 170+ currencies with real-time exchange rates</p>
+
+<form>
+
+<div class="amount">
+<p>Enter Amount</p>
+<input value="1" type="number">
+</div>
+
+<div class="dropdown">
+
+<div class="from">
+<p>From</p>
+
+<div class="select-container">
+<img src="https://flagsapi.com/US/flat/64.png">
+<select name="from"></select>
+</div>
+
+</div>
+
+<i class="fa-solid fa-arrow-right-arrow-left swap"></i>
+
+<div class="to">
+<p>To</p>
+
+<div class="select-container">
+<img src="https://flagsapi.com/IN/flat/64.png">
+<select name="to"></select>
+</div>
+
+</div>
+
+</div>
+
+<div class="msg">1 USD = 83 INR</div>
+
+<button>Get Exchange Rate</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- POPULAR CONVERSIONS -->
+
+<section class="popular">
+
+<h2>Popular Conversions</h2>
+
+<div class="cards">
+
+<div class="card">USD → INR</div>
+<div class="card">EUR → USD</div>
+<div class="card">GBP → INR</div>
+<div class="card">JPY → USD</div>
+<div class="card">AUD → USD</div>
+<div class="card">CAD → INR</div>
+
+</div>
+
+</section>
+
+
+<!-- LIVE RATES -->
+
+<section class="rates">
+
+<h2>Live Exchange Rates</h2>
+
+<table>
+
+<tr>
+<th>Currency</th>
+<th>Rate</th>
+</tr>
+
+<tr><td>USD → INR</td><td>83.10</td></tr>
+<tr><td>USD → EUR</td><td>0.92</td></tr>
+<tr><td>USD → GBP</td><td>0.78</td></tr>
+<tr><td>USD → JPY</td><td>148.50</td></tr>
+
+</table>
+
+</section>
+
+
+<!-- INFO SECTION -->
+
+<section class="info">
+
+<h2>Top Global Currencies</h2>
+
+<div class="grid">
+
+<div class="currencyBox">
+<h3>USD</h3>
+<p>United States Dollar</p>
+</div>
+
+<div class="currencyBox">
+<h3>EUR</h3>
+<p>Euro</p>
+</div>
+
+<div class="currencyBox">
+<h3>GBP</h3>
+<p>British Pound</p>
+</div>
+
+<div class="currencyBox">
+<h3>INR</h3>
+<p>Indian Rupee</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="question">
+<h4>How often are exchange rates updated?</h4>
+<p>Exchange rates are updated in real time from financial data APIs.</p>
+</div>
+
+<div class="question">
+<h4>Is this converter accurate?</h4>
+<p>Rates are based on global forex markets but may slightly vary.</p>
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Global Currency Converter</p>
+
+</footer>
+
+
+<script src="countrylist.js"></script>
+<script src="currency.js"></script>
+
+</body>
 </html>
